@@ -1,4 +1,3 @@
-
 Learn AngularJS components by playing around the tutorial examples.
 
 Here is a collection of tutorial examples in this repository. 
@@ -19,7 +18,7 @@ The examples are kept as small as possible to illustrate the key usages of conce
 --------------------
 
 1. Page Routing:
-   /simple-routing
+   \simple-routing
 
 2. Dependency Injection:
 
