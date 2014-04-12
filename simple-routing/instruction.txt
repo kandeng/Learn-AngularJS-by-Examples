@@ -1,0 +1,46 @@
+
+  To setup and run:
+---------------------------------
+
+1. Download angular-seed to construct the scaffold:
+   sudo git clone https://github.com/bsspirit/angular-seed.git
+   cd angular-seed
+
+2. Download from GitHub and copy them into the folders.
+   app/index.html
+   app/lib/angular-ui-router.js
+   app/lib/angular.js
+   app/styles/bootstrap.css
+   app/views/route1.html
+   app/views/route1.list.html  
+   app/views/route2.html
+   app/views/route2.list.html  
+
+3. node scripts/web-server.js
+
+4. In browser, visit http://localhost:8000/app/index.html
+
+
+  Key points to understand:
+---------------------------------
+
+1. In index.html:
+   <ul class="nav">
+      <li><a ui-sref="state1">Route 1</a></li>
+   
+   ui-sref "state1" corresponds the $stateProvider's state "state1".
+
+2. In index.html:
+   $stateProvider
+     .state('state1', {
+        url: "/route1",
+        templateUrl: "views/route1.html"
+     })
+   
+   url: "/route1" is the relative URL, which shown in browser like this, 
+   http://localhost:8000/app/index.html#/route1
+
+3. In views/route1.html
+   <a ui-sref=".list">Show List</a>
+
+   ui-sref ".list" corresponds to the $stateProvider's state "state1.list".
