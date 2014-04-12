@@ -8,6 +8,7 @@ The examples are kept as small as possible to illustrate the key usages of conce
 1. Download all files in the subfolder, and keep their folder hierarchy. 
 
 2. Read the "instruction.txt" file, which contains three information, 
+   
    a. Setup and run,  b. Key point to understand. c. References. 
 
 3. Strongly suggest to read the instruction and references w.r.t. the source code.
@@ -18,7 +19,8 @@ The examples are kept as small as possible to illustrate the key usages of conce
 --------------------
 
 1. Page Routing:
- . /simple-routing
+ 
+   /simple-routing
 
 2. Dependency Injection:
 
