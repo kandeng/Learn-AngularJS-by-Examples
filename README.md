@@ -18,7 +18,7 @@ The examples are kept as small as possible to illustrate the key usages of conce
 --------------------
 
 1. Page Routing:
-   \simple-routing
+   /simple-routing
 
 2. Dependency Injection:
 
