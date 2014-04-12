@@ -20,7 +20,7 @@ The examples are kept as small as possible to illustrate the key usages of conce
 
 1. Page Routing:
  
-   /simple-routing
+   /simple-routing: A tutorial illustrates how to use $stateProvider to set up the different routes for menu and buttons. 
 
 2. Dependency Injection:
 
