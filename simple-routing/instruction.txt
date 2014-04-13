@@ -26,23 +26,50 @@
 1. In index.html:
    <ul class="nav">
       <li><a ui-sref="state1">Route 1</a></li>
-   
-   ui-sref "state1" corresponds the $stateProvider's state "state1".
-
-2. In index.html:
+   ...
    $stateProvider
-     .state('state1', {
-        url: "/route1",
-        templateUrl: "views/route1.html"
-     })
+      .state('state1', {
+          url: "/route1",
+          templateUrl: "views/route1.html"
+      })
+      .state('state1.list', {
+          url: "/list",
+          templateUrl: "views/route1.list.html",
+          controller: function($scope){
+          $scope.items = ["A", "List", "Of", "Items"];
+      }
+   })
    
-   url: "/route1" is the relative URL, which shown in browser like this, 
-   http://localhost:8000/app/index.html#/route1
+   Note, 
+   
+   a. ui-sref "state1" corresponds the $stateProvider's state "state1".
+  
+   b. url: "/route1" is the relative URL, which shown in browser like this, 
+      http://localhost:8000/app/index.html#/route1
 
-3. In views/route1.html
+
+2. In views/route1.html
    <a ui-sref=".list">Show List</a>
 
-   ui-sref ".list" corresponds to the $stateProvider's state "state1.list".
+   Note, 
+   
+   a. ui-sref ".list" is relative, corresponds to the $stateProvider's state "state1.list".
+   b. The reason that the absolute ui-sref is "state1.list" rather than "state2.list" is that 
+      views/route1.html is routed from state "state1", referring to index.html as following.
+   
+   $stateProvider
+      .state('state1', {
+          url: "/route1",
+          templateUrl: "views/route1.html"
+      })
+      .state('state1.list', {
+          url: "/list",
+          templateUrl: "views/route1.list.html",
+          controller: function($scope){
+          $scope.items = ["A", "List", "Of", "Items"];
+      }
+   })
+
    
 
   References:
