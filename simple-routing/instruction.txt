@@ -7,8 +7,11 @@
 
 2. Download the following files from GitHub and copy them into the folders.
    Since it is very time-consuming to download the files one by one, 
-   one quick way is to download the entire Learn-AngularJS-by-Example repo,
-   then put each files into related subdirectory, instructed as following.
+   one quick way is to download the entire Learn-AngularJS-by-Example repo.
+   
+   Then put each files into related subdirectory, instructed as following.
+   In case there exists files in the directory, with the same names as the downloaded file, 
+   replace the original file with the downloaded file.
    
    angular-seed/app/index.html
    angular-seed/app/lib/angular-ui-router.js
