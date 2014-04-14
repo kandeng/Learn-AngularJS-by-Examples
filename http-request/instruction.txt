@@ -1,0 +1,49 @@
+  To setup and run:
+---------------------------------
+
+1. Download angular-seed to construct the scaffold:
+   user% sudo git clone https://github.com/bsspirit/angular-seed.git
+   user% cd angular-seed
+   
+2. Download the following files from GitHub and copy them into the folders.
+   Since it is very time-consuming to download the files one by one, 
+   one quick way is to download the entire Learn-AngularJS-by-Example repo,
+   then put each files into related subdirectory, instructed as following.
+   
+   angular-seed/app/index.html
+   angular-seed/app/http-hello.html
+   angular-seed/app/js/script.js
+
+3. Run the package.
+   user% node scripts/web-server.js
+
+4. In browser, visit http://localhost:8000/app/index.html
+
+
+
+  Key points to understand:
+---------------------------------
+
+1. In js/script.js:
+
+   Here is the usage of $http. Notice that two callback functions need to implement,
+     success() and error()
+
+   $http({method: $scope.method, url: $scope.url, cache: $templateCache}).
+      success(function (data, status) {
+        $scope.status = status;
+        $scope.data = data;
+      }).
+      error(function (data, status) {
+        $scope.data = data || "Request failed";
+        $scope.status = status;
+      });
+      
+      
+
+  References:
+---------------------------------
+
+1. AngularJS API spec：
+   http://docs.angularjs.org/api/ng/service/$http
+   
