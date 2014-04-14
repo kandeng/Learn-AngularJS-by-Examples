@@ -7,16 +7,17 @@
 
 2. Download the following files from GitHub and copy them into the folders.
    Since it is very time-consuming to download the files one by one, 
-   one quick way is to download the entire Learn-AngularJS-by-Example repo. 
+   one quick way is to download the entire Learn-AngularJS-by-Example repo,
+   then put each files into related subdirectory, instructed as following.
    
-   app/index.html
-   app/lib/angular-ui-router.js
-   app/lib/angular.js
-   app/styles/bootstrap.css
-   app/views/route1.html
-   app/views/route1.list.html  
-   app/views/route2.html
-   app/views/route2.list.html  
+   angular-seed/app/index.html
+   angular-seed/app/lib/angular-ui-router.js
+   angular-seed/app/lib/angular.js
+   angular-seed/app/styles/bootstrap.css
+   angular-seed/app/views/route1.html
+   angular-seed/app/views/route1detail.html  
+   angular-seed/app/views/route2.html
+   angular-seed/app/views/route2detail.html  
 
 3. Run the package.
    user% node scripts/web-server.js
