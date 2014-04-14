@@ -35,6 +35,8 @@ Each subfolder contains a tiny example, illustrating the usage of one AngularJS 
 
 6. RESTful Backend:
 
+   /http-request: Simple $http usage.  
+
 
 7. Promises/Deferred:
 
