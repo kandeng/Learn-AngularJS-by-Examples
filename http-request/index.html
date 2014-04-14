@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example - $http </title>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body ng-app="">
+<div ng-controller="FetchCtrl">
+    <button id="fetchbtn" ng-click="fetch()">fetch</button><br>
+    <pre>http status code: {{status}}</pre>
+    <pre>http response data: {{data}}</pre>
+</div>
+</body>
+</html>
