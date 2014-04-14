@@ -42,11 +42,11 @@
                     url: "/route1",
                     templateUrl: "views/route1.html"
                 })
-                .state('state1.list', {
-                    url: "/list",
-                    templateUrl: "views/route1.list.html",
+                .state('state1.detail', {
+                    url: "/detail",
+                    templateUrl: "views/route1detail.html",
                     controller: function($scope){
-                        $scope.items = ["A", "List", "Of", "Items"];
+                        $scope.items = ["The", "first", "page", "details"];
                     }
                 })
 
@@ -54,11 +54,11 @@
                     url: "/route2",
                     templateUrl: "views/route2.html"
                 })
-                .state('state2.list', {
-                    url: "/list",
-                    templateUrl: "views/route2.list.html",
+                .state('state2.detail', {
+                    url: "/detail",
+                    templateUrl: "views/route2detail.html",
                     controller: function($scope){
-                        $scope.things = ["A", "Set", "Of", "Things"];
+                        $scope.things = ["The", "second", "page", "details"];
                     }
                 })
     })
