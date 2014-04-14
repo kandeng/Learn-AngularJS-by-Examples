@@ -4,7 +4,9 @@ Here is a collection of tutorial examples for AngularJS learners. We believe the
 
 Each subfolder contains a tiny example, illustrating the usage of one AngularJS component.
 
-1. Download all files in the subfolder, and keep their folder hierarchy in order. 
+1. Download all files in the /source subfolder, and put them into the specific directory following instruction.txt. 
+
+   In case there exists files in the directory, with the same names as the downloaded file, replace the original file with the downloaded file.
 
 2. Read the "instruction.txt" file, which contains three information, 
    
